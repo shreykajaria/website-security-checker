@@ -4,7 +4,8 @@ async function scanWebsite() {
   results.innerHTML = '⏳ Scanning...';
 
   try {
-    const response = await fetch('/scan', {
+    const response = await fetch('https://website-security-checker.onrender.com/scan', {
+
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
